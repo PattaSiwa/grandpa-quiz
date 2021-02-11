@@ -1,0 +1,178 @@
+
+
+button:hover{
+cursor: pointer;
+}
+
+.modal {
+
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+.subjectsContainer{
+    padding-bottom: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.subjectPic {
+    width:150px;
+    height:150px;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.subject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.subject button {
+    margin:0;
+}
+
+.modalContent {
+    background-color:#93B7A9;
+    font-size: 2rem;
+    margin: auto;
+    margin-top: 2%;
+    padding: 20px;
+    width: 80vh;
+    height: auto;
+    
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    text-align: center;
+}
+
+.closeBtn {
+    float:right;
+}
+.closeBtn:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    color: #D6A596;
+}
+
+.welcome {
+    margin-top: 20px
+}
+
+
+#helpModal {
+    display:none;
+}
+
+#helpModal ul {
+    text-align: left;
+    list-style: none;
+}
+
+#helpModal li {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+#endModal {
+    display: none;
+}
+
+#retakeQuiz {
+    padding: 5px;
+}
+
+/* start modal style */
+
+
+
+#startQuiz {
+    margin-top: 70px;
+}
+
+
+@media only screen and (max-width: 690px){
+
+.modalContent{
+    font-size: 1.4rem;
+    width: 90%;
+    margin-top: 5%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+ul {
+    padding: 0;
+}
+
+#retakeQuiz {
+    margin-top: 30px;
+}
+
+#helpModal li {
+    margin-bottom: 30px;
+}
+
+.restartQuiz {
+    margin-top: 30px;
+}
+
+
+
+}
+
+@media only screen and (max-width: 900px){
+    #helpModal li{
+        font-size: 1.2rem;
+    }
+
+    #endModal {
+        font-size: 1rem;
+    }
+
+    #startQuiz {
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+    .modalContent {
+        width: 100%;
+        margin: 5% 0;
+        height: 100vh;
+    }
+
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .modalContent {
+        width: 100%;
+        margin: 5% 0;
+        height: 80%;
+    }
+
+}

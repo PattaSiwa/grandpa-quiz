@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleBody.css">
+    <link rel="stylesheet" href="css/styleModal.css">
+    <link rel="stylesheet" href="css/styleGame.css">
+    <title>เกมตอบคำถาม</title>
+</head>
+
+<body>
+    <!-- commenting out for now -->
+    <div id="startModal" class="modal">
+        <div class="modalContent">
+            <div class="welcome">
+                <p id="welcomeText">ยินดีต้อนรับสู่เกมตอบคำถามสำหรับคุณตา!</p>
+            </div>
+            <div>
+                <button id="startGame">เริ่มต้น</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div id="endModal" class="modal">
+        <div class="modalContent">
+
+            <h3>คุณได้รับ</h3>
+            <h3 id="score"></h3>
+            <button id="retakeQuiz">เล่นอีกครั้ง!</button>
+        </div>
+    </div>
+
+    <main>
+
+
+
+        <div class="quizContainer">
+            <p id="yourScore">คะแนนของคุณ:</p>
+            <div class="questionContainer">
+                <h2 id="question"> </h2>
+            </div>
+            <div class="pictureContainer">
+                <!-- <img src="img/1.jpeg" alt="an octopus"> -->
+            </div>
+            <div class="feedbackContainer">
+                <h5 class="feedback">เลือกคำตอบด้านล่าง</h5>
+            </div>
+            <div class="answersContainer">
+                <div class="keyContainer">
+                    <button class="answer" id="A"></button>
+                </div>
+                <div class="keyContainer">
+                    <button class="answer" id="B"></button>
+                </div>
+                <div class="keyContainer">
+                    <button class="answer" id="C"></button>
+                </div>
+                <div class="keyContainer">
+                    <button class="answer" id="D"></button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/helperFunctions.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="familyQuestions.js"></script>
+    <script src="js/modalControlFlow.js"></script>
+
+</body>
+
+</html>

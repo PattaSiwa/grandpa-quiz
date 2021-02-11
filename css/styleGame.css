@@ -1,0 +1,249 @@
+main {
+    width: 80%;
+    margin:auto;
+    margin-top: 30px;
+}
+
+img {
+    width: 100%;
+    height:100%;
+    max-height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px 1px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 4px 3px 5px 1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 4px 3px 5px 1px rgba(0,0,0,0.53);
+}
+
+button {
+    font-family: 'Pangolin', cursive;
+    font-size: 1.4rem;
+    background-color: #EBD0B3;
+    border: none;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    padding: 5px;
+    margin-left: 20px;
+    -webkit-box-shadow: -10px 0px 13px -7px rgba(0,0,0,0.4), 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px rgba(0,0,0,0.4), 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+
+.questionContainer h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+}
+
+.questionContainer {
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.quizContainer {
+    display: none;
+    max-width: 800px;
+    height: auto;
+    width: 70%;
+    border-radius: 20px;
+    margin: 0 auto;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+    background-color:#93B7A9;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+    
+}
+
+.pictureContainer {
+    height: 50%;
+    width: 80%;
+    margin: auto;
+}
+
+/* answers */
+
+.answersContainer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 10px;
+
+}
+.keyContainer {
+    width: 50%;
+}
+.answer{
+    width: 50%;
+    margin-top: 20px;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.answer:disabled {
+    cursor: not-allowed;
+}
+
+.feedbackContainer{
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feedback {
+    padding-top: 20px;
+    margin: auto;
+    font-size: 1.4rem;
+}
+
+#helpMeContainer {
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#yourScore {
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+#helpMe {
+    float:right;
+    margin-top:10px;
+    margin-right: 20px;
+    bottom: 35px;
+}
+
+#question {
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 800px){
+    img {
+        width: 300px;
+        height: 300px;
+    }
+    .questionContainer{
+        left: 0;
+    }
+
+    main{
+     
+        margin-top: 30px;
+    }
+
+    .pictureContainer{
+        height: 40%;
+    }
+
+    #question {
+        font-size: 1.4rem;
+    }
+        
+
+}
+
+
+@media only screen and (max-width: 640px) {
+
+body {
+margin: 0;
+}
+
+main {
+    width: 75%;
+    height: 100vh;
+    margin:auto;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+.quizContainer {
+    width: 100%;
+    height:100%;
+    font-size: 1.2rem;
+   
+}
+.pictureContainer{
+    width: 100%;
+    margin: 0;
+}
+
+.answer, #helpMe, .feedback{
+    font-size: 1rem;
+}
+
+.questionContainer h2 {
+    font-size: 1.4rem;
+}
+
+#yourScore {
+    font-size: 1.2rem;
+}
+
+}
+
+@media only screen and (max-width: 450px){
+    body{
+    background-color:#93B7A9;
+    }
+    main{
+        width:100%;
+        margin: 0;
+        padding:0;
+    }
+    .quizContainer{
+        box-shadow: none;
+    }
+    #yourScore{
+        font-size: .8rem;
+    }
+    #helpMe {
+        font-size: .8rem;
+        margin-top: 3px;
+        margin-right: 3px;
+    }
+    .questionContainer{
+        padding-top: 0;
+    }
+    .feedbackContainer{
+        margin:0;
+    }
+    .pictureContainer{
+        padding-bottom:0;
+    }
+    .answer{
+
+    }
+    .questionContainer{
+        
+        height:auto;
+    }
+    .answersContainer {
+        padding:0;
+    }
+
+    #question{
+        margin:0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: .8rem;
+        word-wrap: none;
+    }
+    
+}
